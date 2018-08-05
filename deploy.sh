@@ -2,7 +2,7 @@
 set -e # termina o script com um código diferente de 0 se alguma coisa falhar
 
 # roda o script de build da nossa aplicação
-ng build --base-href=favoritos
+ng build --base-href=.
 
 # pull requests e commits para outras branches diferentes da master 
 # não devem fazer o deploy, isso é opcional caso queira deletar as próximas 6 linhas
@@ -15,7 +15,7 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]
 fi
 
 # entre na pasta onde está o build do seu projeto e inicie um novo repositório git
-cd dist/favoritos
+cd dist
 git init
 
 # inside this git repo we'll pretend to be a new user
