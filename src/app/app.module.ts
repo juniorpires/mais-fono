@@ -38,6 +38,7 @@ import {
   LinkedinLoginProvider
 } from "angular5-social-auth";
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { GridViewComponent } from './grid-view/grid-view.component';
 
 // Configs 
 export function getAuthServiceConfigs() {
@@ -49,7 +50,7 @@ export function getAuthServiceConfigs() {
         },
         {
           id: GoogleLoginProvider.PROVIDER_ID,
-          provider: new GoogleLoginProvider("1062172680352-69ua0kcurpstpb26d0inl1ag6kv1lpir.apps.googleusercontent.com")
+          provider: new GoogleLoginProvider("449875052890-b486rnik4snau6n34lk28940kh9lt1dj.apps.googleusercontent.com")
         },
          {
           id: LinkedinLoginProvider.PROVIDER_ID,
@@ -73,7 +74,8 @@ export function getAuthServiceConfigs() {
     PerfilComponent,
     DashboardComponent,
     MeusDadosComponent,
-    ConfirmDialogComponent   
+    ConfirmDialogComponent,
+    //GridViewComponent   
     // HomeComponent
   ],
   entryComponents:[ConfirmDialogComponent],
